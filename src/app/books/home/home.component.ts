@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Store, select } from '@ngrx/store';
+import { selectBooks } from '../store/books.selector';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  $books = this.store.pipe(select(selectBooks))
+
+  constructor(private store: Store) { }
 
   ngOnInit(): void {
+  }
+
+  openDeleteModal(id: number): void {
+    console.log(id);
+
   }
 
 }
