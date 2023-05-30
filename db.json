@@ -11,6 +11,18 @@
       "author": "Lewis Carroll",
       "name": "Alice's Adventures in Wonderland",
       "cost": 340
+    },
+    {
+      "id": 3,
+      "author": "No Me Acuerdo",
+      "name": "Una salida honrosa",
+      "cost": 32
+    },
+    {
+      "id": 4,
+      "author": "Juan J. Millas y Arsuaga",
+      "name": "Encuentros en la vida",
+      "cost": 28
     }
   ]
 }
