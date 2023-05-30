@@ -23,6 +23,48 @@
       "author": "Juan J. Millas y Arsuaga",
       "name": "Encuentros en la vida",
       "cost": 28
+    },
+    {
+      "id": 5,
+      "author": "Houlleck",
+      "name": "Parituclas elementales",
+      "cost": 20
+    },
+    {
+      "id": 6,
+      "author": "Epaa",
+      "name": "Inventado",
+      "cost": 2
+    },
+    {
+      "id": 7,
+      "author": "eee",
+      "name": "eeya",
+      "cost": 32
+    },
+    {
+      "id": 8,
+      "author": "eee",
+      "name": "eeya",
+      "cost": 4
+    },
+    {
+      "id": 9,
+      "author": "eee",
+      "name": "eeya",
+      "cost": 432432
+    },
+    {
+      "id": 10,
+      "author": "Galeano",
+      "name": "Las venas abiertas de AM",
+      "cost": 43
+    },
+    {
+      "id": 11,
+      "author": "Houlleck",
+      "name": "Sumision",
+      "cost": 23
     }
   ]
 }
