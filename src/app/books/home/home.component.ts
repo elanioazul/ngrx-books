@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Store, select } from '@ngrx/store';
 import { selectBooks } from '../store/books.selector';
+import { invokeBooksAPI } from '../store/books.action';
 
 @Component({
   selector: 'app-home',
@@ -14,6 +15,7 @@ export class HomeComponent implements OnInit {
   constructor(private store: Store) { }
 
   ngOnInit(): void {
+    this.store.dispatch(invokeBooksAPI())
   }
 
   openDeleteModal(id: number): void {

@@ -1,5 +1,6 @@
-import { createReducer } from "@ngrx/store";
+import { createReducer, on } from "@ngrx/store";
 import { Book } from "./book";
+import { booksFetchAPISuccess } from "./books.action";
 
 export const initialState: ReadonlyArray<Book> = [{
   "id": 1,
@@ -9,5 +10,8 @@ export const initialState: ReadonlyArray<Book> = [{
 }];
 
 export const bookReducer = createReducer(
-    initialState
+    initialState,
+    on(booksFetchAPISuccess, (state, { allBooks }) => {
+      return allBooks
+    })
 );
