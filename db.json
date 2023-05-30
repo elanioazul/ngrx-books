@@ -65,6 +65,18 @@
       "author": "Houlleck",
       "name": "Sumision",
       "cost": 23
+    },
+    {
+      "id": 12,
+      "author": "Hugo",
+      "name": "Ultimo",
+      "cost": 23
+    },
+    {
+      "id": 13,
+      "author": "dummy author",
+      "name": "dummy",
+      "cost": 1
     }
   ]
 }

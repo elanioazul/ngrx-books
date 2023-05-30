@@ -1,12 +1,13 @@
 import { Injectable } from "@angular/core";
 import { Actions, createEffect, ofType } from "@ngrx/effects";
-import { map, switchMap, tap } from "rxjs";
+import { map, switchMap, withLatestFrom, EMPTY } from "rxjs";
 import { BooksService } from "../books.service";
 import { booksFetchAPISuccess, invokeBooksAPI, invokeSaveNewBookAPI, saveBookAPISuccess } from "./books.action";
 import { Router } from "@angular/router";
 import { Appstate } from "src/app/shared/store/appstate";
-import { Store } from "@ngrx/store";
+import { Store, select } from "@ngrx/store";
 import { setApiSatus } from "src/app/shared/store/app.action";
+import { selectBooks } from "./books.selector";
 
 @Injectable()
 export class BooksEffecs {
@@ -15,12 +16,17 @@ export class BooksEffecs {
     private appStore: Store<Appstate>,
     private bookService: BooksService,
     private router: Router,
+    private store: Store,
   ) {}
 
   loadAllBooks$ = createEffect(() =>
     this.actions$.pipe(
       ofType(invokeBooksAPI),
-      switchMap(() => {
+      withLatestFrom(this.store.pipe(select(selectBooks))),
+      switchMap(([, booksFromStore]) => {
+        if (booksFromStore.length > 0) {
+          return EMPTY;
+        }
         return this.bookService.get()
         .pipe(
           map((data) => booksFetchAPISuccess({ allBooks: data }))
