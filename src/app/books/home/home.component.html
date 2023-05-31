@@ -1,7 +1,7 @@
 <div class="container mt-2">
   <div class="row">
-    <div class="col col-md-4 offset-md-4">
-      <a routerLink="/add" class="btn btn-dark">Add A New Book</a>
+    <div class="col col-md-4 offset-md-4 mb-5">
+      <a routerLink="/add" class="btn btn-info">Add A New Book</a>
     </div>
   </div>
   <div class="row row-cols-1 row-cols-md-3 g-4">
@@ -19,7 +19,7 @@
           <a [routerLink]="['/edit', book.id]" class="btn btn-dark"
             >Edit Book</a
           >
-          <button class="btn btn-dark" (click)="openDeleteModal(book.id)">
+          <button class="btn btn-danger" (click)="openDeleteModal(book.id)">
             Delete
           </button>
         </div>

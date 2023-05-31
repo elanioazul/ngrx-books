@@ -18,4 +18,8 @@ export class BooksService {
   create(payload: Book): Observable<any> {
     return this.http.post<Book>(url, payload)
   }
+
+  update(payload: Book): Observable<any> {
+    return this.http.put<Book>(`${url}/${payload.id}`, payload)
+  }
 }

@@ -14,7 +14,7 @@ import { setApiSatus } from 'src/app/shared/store/app.action';
 })
 export class AddComponent implements OnInit {
 
-  bookForm: Book = {
+  book: Book = {
     id: 0,
     author: '',
     name: '',
@@ -27,7 +27,7 @@ export class AddComponent implements OnInit {
   }
 
   save(): void {
-    this.store.dispatch(invokeSaveNewBookAPI({newBookRequested: {...this.bookForm}}))
+    this.store.dispatch(invokeSaveNewBookAPI({newBookRequested: {...this.book}}))
     let appState$ = this.appStore.pipe(select(AppSelector));
     appState$.subscribe((data) => {
       if (data.apiStatus === 'success') {

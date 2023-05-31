@@ -17,3 +17,12 @@ export const saveBookAPISuccess = createAction(
   "[Books API] save book API success",
   props<{newBookCreated: Book}>()
 )
+
+export const invokeUpdateBookAPI = createAction(
+  "[Books API] invoke update book API",
+  props<{bookToEdit: Book}>()
+)
+export const updateBookAPISuccess = createAction(
+  "[Books API] update book API success",
+  props<{bookEdited: Book}>()
+)
