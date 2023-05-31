@@ -1,82 +1,10 @@
 {
   "books": [
     {
-      "id": 1,
-      "name": "Harry Potter and the Philosopher's Stone",
-      "author": "J. K. Rowling Elephant cafe",
-      "cost": 520
-    },
-    {
-      "id": 2,
-      "author": "Lewis Carroll",
-      "name": "Alice's Adventures in Wonderland",
-      "cost": 340
-    },
-    {
-      "id": 3,
-      "author": "No Me Acuerdo",
-      "name": "Una salida honrosa",
-      "cost": 32
-    },
-    {
-      "id": 4,
-      "author": "Juan J. Millas y Arsuaga",
-      "name": "Encuentros en la vida",
-      "cost": 28
-    },
-    {
-      "id": 5,
-      "author": "Houlleck",
-      "name": "Parituclas elementales",
-      "cost": 20
-    },
-    {
-      "id": 6,
-      "author": "Epaa",
-      "name": "Inventado",
-      "cost": 2
-    },
-    {
-      "id": 7,
-      "author": "eee",
-      "name": "eeya",
-      "cost": 32
-    },
-    {
-      "id": 8,
-      "author": "eee",
-      "name": "eeya",
-      "cost": 4
-    },
-    {
-      "id": 9,
-      "author": "eee",
-      "name": "eeya",
-      "cost": 432432
-    },
-    {
-      "id": 10,
-      "author": "Galeano",
-      "name": "Las venas abiertas de AM",
-      "cost": 43
-    },
-    {
       "id": 11,
       "author": "Houlleck El Frances loco",
       "name": "Sumision",
       "cost": 34
-    },
-    {
-      "id": 12,
-      "author": "Hugo",
-      "name": "Ultimo",
-      "cost": 23
-    },
-    {
-      "id": 13,
-      "author": "dummy author",
-      "name": "dummy",
-      "cost": 1
     }
   ]
 }

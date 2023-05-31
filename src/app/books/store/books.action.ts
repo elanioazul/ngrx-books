@@ -26,3 +26,12 @@ export const updateBookAPISuccess = createAction(
   "[Books API] update book API success",
   props<{bookEdited: Book}>()
 )
+
+export const invokeDeleteBookAPI = createAction(
+  "[Books API] invoke delete book API",
+  props<{bookToDeleteId: number}>()
+)
+export const deleteBookAPISuccess = createAction(
+  "[Books API] delete book API success",
+  props<{deletedBookId: number}>()
+)
